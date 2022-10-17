@@ -4,18 +4,18 @@
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
 
-'use strict'
+"use strict"
 /**
  * This function calculates area and perimeter of rectangle.
  */
-function calculate () {
+function calculate() {
   // input
-  const height = parseInt(document.getElementById('height-of-triangle').value)
-  const base = parseInt(document.getElementById('base-of-triangle').value)
-  
+  const height = parseInt(document.getElementById("height-of-triangle").value)
+  const base = parseInt(document.getElementById("base-of-triangle").value)
+
   // process
-  const area =  ( height * base ) / 2 
-  
+  const area = (height * base) / 2
+
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
+  document.getElementById("area").innerHTML = "Area is: " + area + " cm²"
 }
