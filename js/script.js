@@ -1,18 +1,21 @@
-// Copyright (c) 2022 Julienka All rights reserved
+// Copyright (c) 2020 Julienka Sohal All rights reserved
 //
 // Created by: Julienka Sohal
-// Created on: Oct 2022
+// Created on: Sep 2020
 // This file contains the JS functions for index.html
 
+'use strict'
 /**
- * This function gets users Street name and house number and shows it back to user.
+ * This function calculates area and perimeter of rectangle.
  */
-
-function enterClicked() {
-  //input
-  const radiusForCircle = document.getElementById("radius-for-circle").value
-
+function calculate () {
+  // input
+  const height = parseInt(document.getElementById('height-of-triangle').value)
+  const base = parseInt(document.getElementById('base-of-triangle').value)
+  
+  // process
+  const area =  ( height * base ) / 2 
+  
   // output
-  document.getElementById("address").innerHTML =
-    "The circumference of this circle is " + 2 * 3.14 * radiusForCircle + "."
+  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
 }
